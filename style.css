@@ -1,0 +1,26 @@
+.strong {
+    font-weight: bold;
+}
+.big {
+    font-size: larger;
+}
+.italic {
+    font-style: italic;
+}
+.small {
+    font-size: smaller;
+}
+.sub {
+    vertical-align: sub; 
+    font-size: smaller;
+}
+.sup {
+    vertical-align: sup; 
+    font-size: smaller; 
+}
+.ins {
+    text-decoration: underline; 
+}
+.del {
+    text-decoration: line-through;
+} 
