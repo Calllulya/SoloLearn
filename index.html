@@ -3,12 +3,12 @@
         <title>title Заголовок страницы на вкладке браузера</title> 
         <link rel="stylesheet" href="style.css"> 
     </head>
-    <body>
-        <p class="strong">11.1 Урок законспектирован</p> 
+    <body bgcolor="F2F3F4">
+        <p align="center"><span class="white_text big strong">20.1 Урок законспектирован</span></p> 
             Просто текст, без тегов
             <p>p Параграф текта</p>
             <p>Снизу будут 6/6 заголовков</p> 
-        <h1>h1 Первый заголовок</h1>
+        <h1>h1 Первый заголовок: Шрифты</h1>
             hr Снизу будет горизонтальная линия
             <hr> 
             <!--Это кометарий, его не видно на страничке, видно только в коде-->
@@ -16,7 +16,8 @@
             <br>
             вот перенос 
             <p>Обычный текст</p>
-            <p class="strong">Текст жирным шрифтом (никогда его не использовать, strong тоже, но лучше чем b)</p>
+            <p class="strong">Текст жирным шрифтом (никогда его не использовать, 
+                strong тоже, но лучше чем b)</p>
             <p class="big">Текст крупным шрифтом</p>
             <p class="italic">Текст курсивным шрифтом</p>
             <p class="small"> Текст мелким шрифтом</p>
@@ -26,7 +27,7 @@
             <p class="sup">Надстрочный текст</p>
             <p class="ins">Вставленный текст (подчеркнутый)</p>
             <p class="del">Удаленный текст (зачеркнутый)</p>
-        <h2>Второй заголовок Атрибуты</h2>
+        <h2>Второй заголовок: Атрибуты, стили</h2>
             <p align="center"> <!--center можно заменить на left и right-->
             Этот текст выровнен по центру
             </p> 
@@ -37,8 +38,58 @@
             <p align="center">Параграф текста <br>
             <hr width="10%" align="right" />Строка текста 
             </p>            
-        <h3>Третий заголовок</h3>
-        <h4>Четвертый заголовок</h4>
+        <h3>Третий заголовок: Изображения, списки, таблицы, ссылки</h3> 
+            <img class="microsoft_img" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31">
+            <ol>
+                <li>Нумерованный список</li> 
+                <li>Используется тег ol , но его не используют</li>
+            </ol> 
+            <ul>
+                <div class="list"><li>Не нумерованный список ul</li> 
+                <li>точки моджно убрать через CSS</li>
+                <li>Нужно</li></div>
+            </ul>
+            <table border="2">
+                <!-- Атрибут border не поддерживается в HTML5 -->
+                <tr>
+                    <td bgcolor="yellow">Первая колонка, первая строка</td>
+                    <td>Первая колонка, вторая строка</td>
+                    <td>Первая колонка, третья строка</td>
+                    <td>Первая колонка, четвертая строка</td>
+                    <td>Первая колонка, пятая строка</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td colspan="2">2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </table> 
+            <a href="http://www.vk.com" target="blank">Сайт vk.com</a> 
+            <!-- Атрибут target больше не используется -->
+        <h4>Четвертый заголовок: Строчные элементы (<span class="red">Inline</span>) и Блочные элементы 
+            <span class="red">(Block)</span>, Формы</h4>
+            <!-- Блочные элементы не могут входить в состав строчных -->
+                <form action="http://www.vk.com" method="post">
+                <!-- method="post" скрывакт в URL введенные данные, 
+                    method="get" не безопасен, он сохрняет данные из <form>  -->
+                    <input type="text" name="Имя пользователя" /> <br>
+                    <input type="password" name="Пароль" /> <br>
+                    <!-- Почему нет названий????????????????????????????????????????????????????????????????????? -->
+                    <input type="submit" value="Отправить" /> <br>
+                </form> <br> 
+                <form action="http://www.vk.com" method="post">
+                    <input type="radio" name="gender" value="1" /> Мужской <br> 
+                    <input type="radio" name="gender" value="2" /> Женский <br> 
+                    <!-- Radio предлагает выбрать что-то одно --> 
+                    <input type="submit" value="Отправить" /><br>
+                </form> <br>
+                <form action="http://www.vk.com" method="post">
+                    <input type="checkbox" name="color" value="1" /> Красный <br>
+                    <input type="checkbox" name="color" value="2" /> Желтый <br>
+                    <input type="checkbox" name="color" value="3" /> Зеленый <br> 
+                    <input type="submit" value="Отправить" /> <br>
+                </form> <br>
         <h5>Пятый заголовок</h5>
         <h6>Шестой заголовок</h6>
     </body>

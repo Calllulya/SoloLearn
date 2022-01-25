@@ -24,3 +24,28 @@
 .del {
     text-decoration: line-through;
 } 
+h1, h2,  h3, h4, h5, h6 {
+    text-align: center; 
+    font-style: italic;
+    /* Расположение текста по центру, слева, справа */
+} 
+.microsoft_img {
+    margin-left: 41%; 
+    /* Расположение слева */
+    height: 40px;
+/* Высота */
+    width: 200px; 
+     /* Ширина */
+} 
+.list {
+    list-style-type: none;
+} 
+.center {
+    text-align: center;
+}
+.red {
+    color: red;
+} 
+.white_text {
+    color: #808080;
+}
