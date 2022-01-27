@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="style.css"> 
     </head>
     <body bgcolor="F2F3F4">
-        <p align="center"><span class="white_text big strong">20.1 Урок законспектирован</span></p> 
+        <p align="center"><span class="white_text big strong">24.1 Урок законспектирован</span></p> 
             Просто текст, без тегов
             <p>p Параграф текта</p>
             <p>Снизу будут 6/6 заголовков</p> 
@@ -68,14 +68,13 @@
             <a href="http://www.vk.com" target="blank">Сайт vk.com</a> 
             <!-- Атрибут target больше не используется -->
         <h4>Четвертый заголовок: Строчные элементы (<span class="red">Inline</span>) и Блочные элементы 
-            <span class="red">(Block)</span>, Формы</h4>
+            <span class="red">(Block)</span>, Формы, Фреймы</h4>
             <!-- Блочные элементы не могут входить в состав строчных -->
                 <form action="http://www.vk.com" method="post">
                 <!-- method="post" скрывакт в URL введенные данные, 
                     method="get" не безопасен, он сохрняет данные из <form>  -->
-                    <input type="text" name="Имя пользователя" /> <br>
-                    <input type="password" name="Пароль" /> <br>
-                    <!-- Почему нет названий????????????????????????????????????????????????????????????????????? -->
+                    <input type="text" value="Имя пользователя" /> <br>
+                    <input type="password" value="Пароль" /> <br>
                     <input type="submit" value="Отправить" /> <br>
                 </form> <br> 
                 <form action="http://www.vk.com" method="post">
@@ -89,8 +88,26 @@
                     <input type="checkbox" name="color" value="2" /> Желтый <br>
                     <input type="checkbox" name="color" value="3" /> Зеленый <br> 
                     <input type="submit" value="Отправить" /> <br>
-                </form> <br>
-        <h5>Пятый заголовок</h5>
+                </form> <br> 
+                Снизу хрень не работает <br>
+                <table border="2">
+                    <tr>
+                        <td>
+                            <p><strong>Теги frameset frame были отменены в языке HTML5</strong></p>
+                            <p>Отдельное окно (фрейм) создается с применением тегов frame, которые заключаются в пару тегов frameset. 
+                                Каждый тег frame внутри элемента frameset  может содержать различные атрибуты: 
+                                border(рамка), scrolling(прокрутка), noresize (запрет изменять размер) и т.д.</p>
+                            <p>В элементе frameset назначяется количесто строк или столбцов фреймов, 
+                                а также указывается размер каждого из них в процентах или пикселях</p>
+                            <frameset cols="100, 25%, *">
+                               <frame src="http://www.vk.com" />
+                            </frameset>
+                            <frameset rows="100, 25%, *">
+                            </frameset> 
+                        </td>
+                    </tr>
+                </table>
+        <h5>Пятый заголовок: "HTML5"</h5>
         <h6>Шестой заголовок</h6>
     </body>
 </html>
