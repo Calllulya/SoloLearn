@@ -1,7 +1,6 @@
 h1, h2,  h3, h4, h5, h6 {
     text-align: center; 
-    font-style: italic;
-    /* Расположение текста по центру, слева, справа */
+    font-style: italic; 
 }
 .upper-roman {
     list-style-type: upper-roman;
@@ -24,4 +23,16 @@ h1, h2,  h3, h4, h5, h6 {
 } 
 .big {
     font-size: larger; 
+}
+.conspect_title {
+    text-align: center; 
+    font-style: italic;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.dash {
+    list-style-type: disclosure-closed;
+} 
+.ultop {
+    margin-top: 1px;
 }

@@ -7,8 +7,38 @@
     <link rel="stylesheet" href="../styles/HTML5.css"> 
 </head>
 <body bgcolor="F2F3F4"> 
-    <p align="center"><span class="white_text big strong">28.1 Урок законспектирован</span></p>
-    <h1>Строение страницы HTML5</h1>
+    <p align="center"><span class="white_text big strong">44.1 Урок законспектирован
+        <br>The End
+    </span></p>
+    <p align="center"><a href="https://www.sololearn.com/Certificate/1014-24643367/pdf/">Сертификат HTML course</a></p>
+    <audio src="../music/prosto.mp3" muted controls autoplay loop></audio>
+
+    <audio controls autoplay loop>
+        <source src="../music/prosto.mp3" type="audio/ogg; codecs=vorbis">
+        <source src="../music/prosto.mp3" type="audio/mpeg">
+        Тег audio не поддерживается вашим браузером. 
+        <a href="audio/music.mp3">Скачайте музыку</a>.
+      </audio> <br>
+      <!-- тег <autoplay> для музыки Chrome не поддерживает -->
+      <!-- С Видео тоже самое -->
+
+    <form action="">
+        <label>Ваше имя: <input id="user" name="username" type="text" value="username"></label><br>
+        <label> Email: <input type="text" name="email" placeholder="email@example.com" 
+        autofocus required></label><br>
+        <label>Search: <input id="search" name="searchitem" type="search"></label>
+    </form>
+
+    <svg wigth="1000" heigh="1000">
+            <circle cx="250" cy="80" r="50" fill="yellow"/>
+    </svg>
+        <p>-cx - центр круга перемещается вправо по экрану <br>
+        -cy - центр круга передвигается вниз по экрану <br>
+        -r - задает радиус <br>
+        -fill - задает цвет нашему кругу <br> 
+        -stoke - для создания круга<br></p>
+
+    <p class="conspect_title">Строение страницы HTML5</p> <br> 
         Категории моделей контента(были блочные и строчные)
         <ul class="upper-roman">
             <li><span class="definition">Метаданные:</span> Контент, который определяет представление
@@ -56,10 +86,41 @@
             <img class="111" src="111.jpg" alt="" height="300" width="550"> 
             <img class="222" src="222.jpg" alt="" height="300" width="450"> <br>
         </ul>
+    <header>
+    <h1>Самый громкий заголовок</h1>
+    <p>&lth1&gt - &lth6&gt находятся внутри &ltheader&gt</p>
     <h2></h2>
-    <h3></h3>
+    <h3>Не столь громкий заголовок</h3>
     <h4></h4>
     <h5></h5>
-    <h6></h6>
+    <h6></h6> 
+    <nav>
+        <ul> Тег &ltnav&gt
+            <li><a href="#">Домашняя страница</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">О нашей компании</a></li>
+        </ul>
+    </nav> <br> 
+    <p>&ltsection&gt (может быть несколько) логический &ltdiv&gt, разбивается на несколько &ltdiv&gt 
+    и содержит &lth1&gt - &lth6&gt </p>
+    <p>&ltarticule&gt тоже самое что и &ltdiv&gt </p>
+    Тег &ltaside&gt служит для второстопененного и сопутствующего контента. <br> 
+    Этот контент, независимый от основного контента, но на прямую с ним связанный. <br>
+    Он обычно распологается в боковых панелях страницы. <br>
+    Когда тег &ltaside&gt используется внутри тега &ltarticle&gt, контент &ltaside&gt должен 
+    должен иметь непосредственное отношение к контенту &ltarticle&gt (Доставка в течении 24 часов)</p>  
+    <footer>&ltfooter&gtТоже широко используемый элемент. 
+        Обычно самая нижняя секция веб-страницы называется подвалом или футером <br> <br>
+        В эту пару тегов может заключаться: 
+        <ul class="ultop">
+        <li class="dash">Контактная информация</li>
+        <li class="dash">Политика конфидициальности</li>
+        <li class="dash">Значки социальных медиа</li>
+        <li class="dash">Условия предоставления услуг</li>
+        <li class="dash">Информация об авторских правах</li>
+        <li class="dash">Карта сайта и сопутствующие документы</li>
+        </ul>
+    </footer>
+</header>
 </body>
 </html>
